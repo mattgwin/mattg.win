@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Growth Marketing & Analytics Expert",
   avatar: "/images/avatar.jpg",
   location: "America/Vancouver", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: [], // optional: Leave the array empty if you don't want to display languages
@@ -81,9 +81,9 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        A direct to consumer and agency experienced marketing manager with a passion for finding data-driven solutions
+        and the technical ability to perform the analysis. Excels in developing creative solutions to accelerate growth
+        in paid and earned channels to take businesses above and beyond their marketing goals
       </>
     ),
   },
@@ -92,7 +92,7 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
+        company: "Vitruvi",
         timeframe: "2022 - Present",
         role: "Senior Design Engineer",
         achievements: [
@@ -196,7 +196,7 @@ const blog = {
 };
 
 const work = {
-  label: "Work",
+  label: "Projects",
   title: "My projects",
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts

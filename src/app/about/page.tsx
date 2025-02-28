@@ -6,6 +6,7 @@ import {
   Heading,
   Icon,
   IconButton,
+  Logo,
   SmartImage,
   Tag,
   Text,
@@ -218,9 +219,11 @@ export default function About() {
                 {about.work.experiences.map((experience, index) => (
                   <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
                     <Flex fillWidth horizontal="space-between" vertical="end" marginBottom="4">
-                      <Text id={experience.company} variant="heading-strong-l">
-                        {experience.company}
-                      </Text>
+                      <a href="https://vitruvi.com" style={{ textDecoration: "none", color: "inherit" }}>
+                        <Text id={experience.company} variant="heading-strong-l">
+                          {experience.company}
+                        </Text>
+                      </a>
                       <Text variant="heading-default-xs" onBackground="neutral-weak">
                         {experience.timeframe}
                       </Text>
