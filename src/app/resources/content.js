@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Growth Marketing & Analytics Expert",
+  role: "Performance Marketing & Analytics Expert",
   avatar: "/images/avatar.jpg",
   location: "America/Vancouver", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: [], // optional: Leave the array empty if you don't want to display languages
@@ -37,11 +37,6 @@ const social = [
     link: "https://www.linkedin.com/in/mattgwin/",
   },
   {
-    name: "X",
-    icon: "x",
-    link: "",
-  },
-  {
     name: "Email",
     icon: "email",
     link: "mailto:hello@mattg.win",
@@ -52,11 +47,10 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Marketing Analyst, eCommerce Enthusiast, & Developer</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Matt, a performance marketer with a proven track record of leveraging data and technical analysis to achieve significant business growth.
     </>
   ),
 };
@@ -81,9 +75,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        A direct to consumer and agency experienced marketing manager with a passion for finding data-driven solutions
-        and the technical ability to perform the analysis. Excels in developing creative solutions to accelerate growth
-        in paid and earned channels to take businesses above and beyond their marketing goals
+        A performance marketer with a proven track record of leveraging data and technical analysis to achieve significant business growth.
       </>
     ),
   },
@@ -93,43 +85,94 @@ const about = {
     experiences: [
       {
         company: "Vitruvi",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        timeframe: "2023 - 2025",
+        role: "Director, eCommerce",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+          <>Delivered 4x+ revenue growth in Vitruvi's eCommerce channel over three years, leading paid, organic, and earned marketing, web development, and design initiatives.</>,
+          <>Achieved the eCommerce channel's first profitable year by implementing accurate demand forecasts, reducing operational costs by 15%, and optimizing revenue strategies.</>,
+          <>Propelled Vitruvi's growth by launching the Humidifier product line on eCommerce, achieving $1.5M+ in first-year sales and expanding core product offerings.</>,
+          <>Spearheaded Shopify implementation and managed complex web development, ensuring seamless operations and the successful launch of Vitruvi's 2022 rebrand web experience.</>,
+          <>Implemented custom Shopify web experiences, including the 'Build Your Own Bundle' feature, resulting in a 12% increase in average cart size within its category</>
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/projects/vitruvi/webpage.png",
+            alt: "Vitruvi Homepage",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/vitruvi/byob.png",
+            alt: "Vitruvi Build Your Own Bundle",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Vitruvi",
+        timeframe: "2019 - 2022",
+        role: "Manager, Performance Marketing",
         achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+          <>Maximized $1M+ annual ad spend, doubling investment and achieving a 40%+ ROAS increase within 12 months through platform automation and profitable Google Shopping channel development.</>,
+          <>Engineered a fully automated sales reporting dashboard and R data pipeline, improving forecast accuracy by 30% and reporting frequency by 3x.</>
         ],
         images: [],
+      },
+      {
+        company: "Major Tom",
+        timeframe: "2017 - 2018",
+        role: "Analyst, Performance Marketing",
+        achievements: [
+          <>Drove measurable ROI growth through strategic digital marketing campaigns management across Paid Search, Paid Social, and SEO channels.</>,
+          <>Delivered timely, actionable insights across 50+ client accounts, supporting 15 account managers.</>,
+          <>Developed and automated client reporting via Tableau and Google Data Studio</>,
+          <>Led internal data measurement team, enhancing campaign measurement and optimization through innovative analysis techniques.</>,
+        ],
+        images: [
+          {
+            src: "/images/projects/major-tom/webpage.png",
+            alt: "Major Tom Homepage",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        company: "Saab Technologies",
+        timeframe: "2016",
+        role: "Coordinator, Marketing & Sales",
+        achievements: [
+          <>Drove strategic Sales & Marketing project execution, showcasing exceptional autonomy and initiative.</>,
+          <>Engineered lead generation growth for KleinPilot through data-driven market analysis and targeted digital campaigns.</>,
+          <>Optimized CRM performance via custom workflow automation, directly enhancing business development velocity.</>,
+          <>Ensured CRM data integrity and operational excellence, a critical foundation for sales and marketing effectiveness.</>
+        ],
+        images: [],
+      },
+      {
+        company: "Baseball Prospectus Toronto",
+        timeframe: "2013 - 2017",
+        role: "Co-Founder & Managing Editor",
+        achievements: [
+          <>Founded and scaled BlueJaysPlus.com, a pioneering sabermetrics-focused sports content platform, acquired by Baseball Prospectus.</>,
+          <>Grew BlueJaysPlus.com to 500k-1M annual page views, establishing it as a leading source for advanced baseball analytics.</>,
+          <>Published expert baseball analysis in leading sports media outlets, including ESPN and Baseball Prospectus Annual (2016-2017).</>
+        ],
+        images: [
+          {
+            src: "/images/projects/baseball-prospectus-toronto/webpage.png",
+            alt: "Baseball Prospectus Toronto Homepage",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/baseball-prospectus-toronto/byline_espn.png",
+            alt: "ESPN Byline",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
     ],
   },
@@ -138,50 +181,39 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
-      },
+        name: "BCom, UBC Sauder School of Business",
+        description: <>Advanced coursework in Marketing and Business Technology Management.</>,
+      }
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Data Analysis & Visualization",
+        description: <>Comprehensive data analysis: R/Python analytics, robust data pipelines, and insightful dashboards via Tableau/Data Studio for data-driven results.</>,
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Shopify eCommerce Management",
+        description: <>Shopify proficiency in platform management and front-end development using Liquid, HTML, and CSS to enhance user experience and drive sales.</>,
+        images: [],
+      },
+      {
+        title: "Paid Search & Paid Social Advertising",
+        description: <>Management and strategic setup of high-ROI paid campaigns across Google Ads, Facebook Ads Manager, TikTok Ads, Pinterest Ads, Snap Ads, and more.</>,
+        images: [],
+      },
+      {
+        title: "Conversion Optimization, Analytics, & Tracking",
+        description: <>Tracking set-up and actionable insights for conversion optimization via Northbeam, Google Analytics, Google Tag Manager, and Hotjar.</>,
+        images: [],
+      },
+      {
+        title: "Front End Web Development",
+        description: <>Working knowledge of React (JSX), Tailwind CSS, and Git for front-end development.</>,
+        images: [],
       },
     ],
   },
