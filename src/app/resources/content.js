@@ -124,8 +124,7 @@ const about = {
         timeframe: "2017 - 2018",
         role: "Analyst, Performance Marketing",
         achievements: [
-          <>Drove measurable ROI growth through strategic digital marketing campaigns management across Paid Search, Paid Social, and SEO channels.</>,
-          <>Delivered timely, actionable insights across 50+ client accounts, supporting 15 account managers.</>,
+          <>Drove measurable ROI growth across 50+ client accounts through strategic digital marketing campaigns management across Paid Search, Paid Social, and SEO channels.</>,
           <>Developed and automated client reporting via Tableau and Google Data Studio</>,
           <>Led internal data measurement team, enhancing campaign measurement and optimization through innovative analysis techniques.</>,
         ],
@@ -143,7 +142,6 @@ const about = {
         timeframe: "2016",
         role: "Coordinator, Marketing & Sales",
         achievements: [
-          <>Drove strategic Sales & Marketing project execution, showcasing exceptional autonomy and initiative.</>,
           <>Engineered lead generation growth for KleinPilot through data-driven market analysis and targeted digital campaigns.</>,
           <>Optimized CRM performance via custom workflow automation, directly enhancing business development velocity.</>,
           <>Ensured CRM data integrity and operational excellence, a critical foundation for sales and marketing effectiveness.</>
