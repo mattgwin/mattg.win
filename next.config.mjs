@@ -13,11 +13,11 @@ const nextConfig = {
       {
         // OT Notes Assisant
         // MG
-        source: 'mg/ot-notes',
+        source: 'mg-ot-notes',
         destination: 'https://n8n.mattg.win/webhook/4ea1a049-032f-454a-acf5-ddcb5091966f/chat',
         permanent: false,
         // AS
-        source: 'as/ot-notes',
+        source: 'as-ot-notes',
         destination: 'https://n8n.mattg.win/webhook/4ea1a049-032f-454a-acf5-ddcb5091966f/chat',
         permanent: false,
       },
