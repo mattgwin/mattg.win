@@ -18,7 +18,7 @@ const nextConfig = {
       },
       {
         source: '/as-ot-notes',
-        destination: 'https://n8n.mattg.win/webhook/4ea1a049-032f-454a-acf5-ddcb5091966f/chat',
+        destination: 'https://n8n.mattg.win/webhook/e0af8d8c-479a-4ad2-a470-fd8578de1775/chat',
         permanent: false,
       },
     ];
