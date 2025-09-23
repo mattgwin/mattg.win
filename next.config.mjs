@@ -8,6 +8,16 @@ const withMDX = mdx({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ["ts", "tsx", "md", "mdx"],
+  async redirects() {
+    return [
+      {
+        // Redirect to OT Notes Assistant
+        source: '/ot-notes-assistant',
+        destination: 'https://n8n.mattg.win/webhook/4ea1a049-032f-454a-acf5-ddcb5091966f/chat',
+        permanent: false,
+      },
+    ];
+  },
 };
 
 export default withMDX(nextConfig);
