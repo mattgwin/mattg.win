@@ -50,7 +50,7 @@ const home = {
   headline: <>Marketing Analyst, eCommerce Enthusiast, & Developer</>,
   subline: (
     <>
-      I'm Matt, a performance marketer with a proven track record of leveraging data and technical analysis to achieve significant business growth.
+      I'm Matt, a growth marketer with a proven track record of leveraging data and technical analysis to achieve significant business growth.
     </>
   ),
 };
