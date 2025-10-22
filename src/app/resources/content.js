@@ -90,7 +90,7 @@ const about = {
     experiences: [
       {
         company: "MG Insights",
-        timeframe: "2025 Present",
+        timeframe: "2025-Present",
         role: "Growth Marketing & Al Consultant",
         achievements: [
           <>Delivered Al automation and marketing solutions for eCommerce and healthcare clients, translating technical capabilities into measurable business outcomes.</>,
@@ -115,7 +115,7 @@ const about = {
       },
       {
         company: "Vitruvi",
-        timeframe: "2023 2025",
+        timeframe: "2023-2025",
         role: "Director, Direct-to-Consumer & Growth Marketing",
         achievements: [
           <>Owned and scaled the company's largest sales channel, reporting directly to the COO while developing growth strategies that delivered 4x revenue expansion and the channel's first profitable year.</>,
@@ -150,7 +150,7 @@ const about = {
       },
       {
         company: "Major Tom Agency",
-        timeframe: "2017-2018",
+        timeframe: "2017-2019",
         role: "Analyst, Performance Marketing",
         achievements: [
           <>Drove campaign optimization across $3M+ in client ad spend, working with account managers across 30+ accounts to exceed ROI and efficiency targets.</>,
