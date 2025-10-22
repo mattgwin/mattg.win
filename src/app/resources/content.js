@@ -88,11 +88,10 @@ const about = {
         timeframe: "2023 - 2025",
         role: "Director, eCommerce",
         achievements: [
-          <>Delivered 4x+ revenue growth in Vitruvi's eCommerce channel over three years, leading paid, organic, and earned marketing, web development, and design initiatives.</>,
-          <>Achieved the eCommerce channel's first profitable year by implementing accurate demand forecasts, reducing operational costs by 15%, and optimizing revenue strategies.</>,
-          <>Propelled Vitruvi's growth by launching the Humidifier product line on eCommerce, achieving $1.5M+ in first-year sales and expanding core product offerings.</>,
-          <>Spearheaded Shopify implementation and managed complex web development, ensuring seamless operations and the successful launch of Vitruvi's 2022 rebrand web experience.</>,
-          <>Implemented custom Shopify web experiences, including the 'Build Your Own Bundle' feature, resulting in a 12% increase in average cart size within its category</>
+          <>Owned and scaled the company's largest sales channel as Director of DTC, reporting directly to the CRO while developing growth strategies that delivered 4x revenue expansion and the channel's first profitable year.</>,
+          <>Built and led a high-performance DTC marketing team of internal specialists and agency partners, establishing the KPI frameworks and scalable workflows necessary to support 4x revenue growth.</>,
+          <>Architected a new paid media strategy centred on a systematic creative testing framework, scaling the annual budget to a multi-million dollar level while simultaneously increasing portfolio ROAS by over 30%.</>,
+          <>Drove the successful go-to-market strategy for the new Humidifier product line, orchestrating a multi-channel launch that generated $1.5M+ in first-year DTC sales and expanded the company's core product catalog.</>
         ],
         images: [
           {
