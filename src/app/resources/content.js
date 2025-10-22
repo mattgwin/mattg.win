@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Performance Marketing & Analytics Expert",
+  role: "Growth Marketing & Analytics Expert",
   avatar: "/images/avatar.jpg",
   location: "America/Vancouver", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: [], // optional: Leave the array empty if you don't want to display languages
@@ -75,7 +75,12 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        A performance marketer with a proven track record of leveraging data and technical analysis to achieve significant business growth.
+        Strategic marketing leader with 8+ years building growth marketing systems,
+        now focused on integrating AI-powered solutions that help teams scale.
+        Combines technical skills in data analytics and automation with demand
+        generation expertise to architect frameworks driving measurable results.
+        Collaborates with Product, RevOps, and Marketing teams to translate emerging
+        AI capabilities into actionable strategies.
       </>
     ),
   },
@@ -84,14 +89,38 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "Vitruvi",
-        timeframe: "2023 - 2025",
-        role: "Director, eCommerce",
+        company: "MG Insights",
+        timeframe: "2025 Present",
+        role: "Growth Marketing & Al Consultant",
         achievements: [
-          <>Owned and scaled the company's largest sales channel as Director of DTC, reporting directly to the CRO while developing growth strategies that delivered 4x revenue expansion and the channel's first profitable year.</>,
-          <>Built and led a high-performance DTC marketing team of internal specialists and agency partners, establishing the KPI frameworks and scalable workflows necessary to support 4x revenue growth.</>,
-          <>Architected a new paid media strategy centred on a systematic creative testing framework, scaling the annual budget to a multi-million dollar level while simultaneously increasing portfolio ROAS by over 30%.</>,
-          <>Drove the successful go-to-market strategy for the new Humidifier product line, orchestrating a multi-channel launch that generated $1.5M+ in first-year DTC sales and expanded the company's core product catalog.</>
+          <>Delivered Al automation and marketing solutions for eCommerce and healthcare clients, translating technical capabilities into measurable business outcomes.</>,
+          <>Engineered Al documentation system for an occupational therapy client using n8n and Google Gemini. Automated conversion of voice/handwritten notes to clinical reports, reducing documentation time by 80%.</>,
+          <>Deployed secure patient communication system for a healthcare client using n8n and Twilio APIs with intelligent routing and caller ID privacy.</>,
+          <>Built marketing analytics pipeline for an eCommerce client using Python and Google BigQuery. Consolidated multi-channel data into automated dashboards, providing near real-time profitability insights.</>
+        ],
+        images: [
+          {
+            src: "/images/projects/ot-notes-assistant/chat.png",
+            alt: "OT Notes Assistant AI Agent",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/vital-number/Vital1.jpg",
+            alt: "Secure Patient Communication",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        company: "Vitruvi",
+        timeframe: "2023 2025",
+        role: "Director, Direct-to-Consumer & Growth Marketing",
+        achievements: [
+          <>Owned and scaled the company's largest sales channel, reporting directly to the COO while developing growth strategies that delivered 4x revenue expansion and the channel's first profitable year.</>,
+          <>Orchestrated cross-functional product launch, aligning Marketing, Product, and Operations around unified metrics. Collaborated with Product team on go-to-market execution addressing shipping constraints and merchandising requirements for DTC channel. Generated $1.5M+ first-year revenue.</>,
+          <>Architected systematic paid media testing framework transforming campaign development from intuition-driven to data-informed. Scaled investment to multi-million dollar levels while improving ROAS by over 30%.</>
         ],
         images: [
           {
@@ -110,22 +139,22 @@ const about = {
       },
       {
         company: "Vitruvi",
-        timeframe: "2019 - 2022",
-        role: "Manager, Performance Marketing",
+        timeframe: "2019-2022",
+        role: "Manager, Growth Marketing",
         achievements: [
-          <>Maximized $1M+ annual ad spend, doubling investment and achieving a 40%+ ROAS increase within 12 months through platform automation and profitable Google Shopping channel development.</>,
-          <>Engineered a fully automated sales reporting dashboard and R data pipeline, improving forecast accuracy by 30% and reporting frequency by 3x.</>
+          <>Managed and executed multi-channel demand generation across Shopify and Amazon channels, executing integrated campaigns while collaborating with Content, Affiliate, and Influencer teams.</>,
+          <>Led cross-functional rebrand project spanning Marketing, Design, and Development. Managed external partners through complex Shopify implementation including dynamic bundling features, resulting in 20%+ AOV improvement.</>,
+          <>Engineered automated reporting infrastructure using R consolidating cross-channel sales data. Improved forecast accuracy by 30% and enabled faster, data-informed decision-making.</>
         ],
         images: [],
       },
       {
-        company: "Major Tom",
-        timeframe: "2017 - 2018",
+        company: "Major Tom Agency",
+        timeframe: "2017-2018",
         role: "Analyst, Performance Marketing",
         achievements: [
-          <>Drove measurable ROI growth across 50+ client accounts through strategic digital marketing campaigns management across Paid Search, Paid Social, and SEO channels.</>,
-          <>Developed and automated client reporting via Tableau and Google Data Studio</>,
-          <>Led internal data measurement team, enhancing campaign measurement and optimization through innovative analysis techniques.</>,
+          <>Drove campaign optimization across $3M+ in client ad spend, working with account managers across 30+ accounts to exceed ROI and efficiency targets.</>,
+          <>Built automated performance dashboards using Tableau and Google Data Studio eliminating 20+ hours of manual weekly reporting while enabling real-time client insights.</>
         ],
         images: [
           {
@@ -141,9 +170,8 @@ const about = {
         timeframe: "2016",
         role: "Coordinator, Marketing & Sales",
         achievements: [
-          <>Engineered lead generation growth for KleinPilot through data-driven market analysis and targeted digital campaigns.</>,
-          <>Optimized CRM performance via custom workflow automation, directly enhancing business development velocity.</>,
-          <>Ensured CRM data integrity and operational excellence, a critical foundation for sales and marketing effectiveness.</>
+          <>Partnered with Sales teams across North America and Europe to drive B2B lead generation through targeted digital campaigns and market research.</>,
+          <>Optimized CRM data architecture to build scalable marketing operations, improving campaign targeting and reporting to align Marketing and Sales around pipeline objectives.</>
         ],
         images: [],
       },
