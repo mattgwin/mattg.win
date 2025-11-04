@@ -21,6 +21,13 @@ const nextConfig = {
         destination: 'https://n8n.mattg.win/webhook/e0af8d8c-479a-4ad2-a470-fd8578de1775/chat',
         permanent: false,
       },
+      // Schedule a Call
+      {
+        source: '/meeting',
+        destination: 'https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0LQK10cx6SYPIcCIdoRhiSfhMkHzqh4Urzm7bbzxNen7jP5ulvhwAjA7h5ZbZBiKur2WE9P1Qq',
+        permanent: false,
+      },
+      
     ];
   },
 };
