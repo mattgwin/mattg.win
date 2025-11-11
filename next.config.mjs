@@ -27,7 +27,12 @@ const nextConfig = {
         destination: 'https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0LQK10cx6SYPIcCIdoRhiSfhMkHzqh4Urzm7bbzxNen7jP5ulvhwAjA7h5ZbZBiKur2WE9P1Qq',
         permanent: false,
       },
-      
+      // Travel Guides
+      {
+        source: '/cdmx',
+        destionation: 'https://mattgwin.notion.site/Matt-s-Guide-to-Mexico-City-b35accc707ae4061a041ac9b303bac7f',
+        permanent: false,
+      }
     ];
   },
 };
