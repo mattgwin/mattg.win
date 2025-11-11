@@ -30,9 +30,9 @@ const nextConfig = {
       // Travel Guides
       {
         source: '/cdmx',
-        destionation: 'https://mattgwin.notion.site/Matt-s-Guide-to-Mexico-City-b35accc707ae4061a041ac9b303bac7f',
+        destination: 'https://mattgwin.notion.site/Matt-s-Guide-to-Mexico-City-b35accc707ae4061a041ac9b303bac7f',
         permanent: false,
-      }
+      },
     ];
   },
 };
