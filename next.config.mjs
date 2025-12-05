@@ -33,6 +33,12 @@ const nextConfig = {
         destination: 'https://mattgwin.notion.site/Matt-s-Guide-to-Mexico-City-b35accc707ae4061a041ac9b303bac7f',
         permanent: false,
       },
+      // Jellyfin via Tailscale
+      {
+        source: '/media',
+        destination: 'http://media.echo-toad.ts.net:8096',
+        permanent: false,
+      },
     ];
   },
 };
