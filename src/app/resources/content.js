@@ -50,11 +50,7 @@ const home = {
   headline: <>Marketing Analyst, eCommerce Enthusiast, & Developer</>,
   subline: (
     <>
-      Hiya 👋 I'm Matt. I'm an experienced growth marketer, most recently running growth and eCommerce at Vitruvi where I spent a few years building out their DTC channel. I like figuring out how the pieces fit together: paid media, analytics, site optimization, that kind of thing. Lately I've been experimenting with AI automation and trying to separate what's useful from what's just hype. You'll usually find me thinking through problems in spreadsheets, scribbling notes, or buried in analytics dashboards.
-      
-      Outside of work, I have a tendency to fall down sports rabbit holes and become completely obsessed. As a kid it was baseball (which led to writing about it semi professionally). More recently it's been soccer (Whitecaps & Swansea City), F1 (McLaren), and eSports (Optic Gaming).
-      
-      Looking forward to working with everyone!
+      I'm Matt, a growth marketer with a proven track record of leveraging data and technical analysis to achieve significant business growth.
     </>
   ),
 };
