@@ -41,6 +41,15 @@ const nextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return [
+      // Obsidian vault handoff: /o?f=<slug> -> obsidian://open
+      {
+        source: '/o',
+        destination: '/o.html',
+      },
+    ];
+  },
 };
 
 export default withMDX(nextConfig);
