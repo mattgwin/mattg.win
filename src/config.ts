@@ -1,91 +1,181 @@
 export const siteConfig = {
-  name: "Ryan Fitzgerald",
-  title: "Senior Software Engineer",
-  description: "Portfolio website of Ryan Fitzgerald",
+  name: "Matt Gwin",
+  title: "Growth Marketing & Analytics Expert",
+  description:
+    "Portfolio website showcasing my work as a Growth Marketing & Analytics Expert",
   accentColor: "#1d4ed8",
+
+  // Carried over from the Magic Portfolio build
+  avatar: "/images/avatar.jpg",
+  headline: "Marketing Analyst, eCommerce Enthusiast, & Developer",
+  location: "Vancouver, BC",
+  // Booking link from the old /about page calendar CTA
+  calendarLink:
+    "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0LQK10cx6SYPIcCIdoRhiSfhMkHzqh4Urzm7bbzxNen7jP5ulvhwAjA7h5ZbZBiKur2WE9P1Qq",
+
   social: {
-    email: "your-email@example.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
-    github: "https://github.com/RyanFitzgerald",
+    email: "hello@mattg.win",
+    linkedin: "https://www.linkedin.com/in/mattgwin/",
+    github: "https://github.com/mattgwin",
   },
+
   aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+    "Strategic marketing leader with 8+ years building growth marketing systems, now focused on integrating AI-powered solutions that help teams scale. I combine technical skills in data analytics and automation with demand generation expertise to architect frameworks that drive measurable results, working with Product, RevOps, and Marketing teams to turn emerging AI capabilities into actionable strategy.",
+
+  skills: [
+    "Python",
+    "R",
+    "SQL / BigQuery",
+    "n8n",
+    "Shopify / Liquid",
+    "React",
+    "Tailwind CSS",
+    "Google Ads",
+    "Meta Ads",
+    "GA4 / GTM",
+    "Tableau",
+    "Northbeam",
+  ],
+
+  // Richer version of the old "Technical Skills" section, which had a
+  // description per area rather than bare tags.
+  skillAreas: [
+    {
+      title: "Data Analysis & Visualization",
+      description:
+        "Comprehensive data analysis: R/Python analytics, robust data pipelines, and insightful dashboards via Tableau/Data Studio for data-driven results.",
+    },
+    {
+      title: "AI Automation & Workflow Engineering",
+      description:
+        "Production automations built with n8n, Google Gemini, and Twilio APIs, turning manual back-office processes into reliable, auditable pipelines.",
+    },
+    {
+      title: "Shopify eCommerce Management",
+      description:
+        "Platform management and front-end development using Liquid, HTML, and CSS to enhance user experience and drive sales.",
+    },
+    {
+      title: "Paid Search & Paid Social Advertising",
+      description:
+        "Management and strategic setup of high-ROI paid campaigns across Google Ads, Facebook Ads Manager, TikTok Ads, Pinterest Ads, Snap Ads, and more.",
+    },
+    {
+      title: "Conversion Optimization, Analytics, & Tracking",
+      description:
+        "Tracking set-up and actionable insights for conversion optimization via Northbeam, Google Analytics, Google Tag Manager, and Hotjar.",
+    },
+    {
+      title: "Front End Web Development",
+      description:
+        "Working knowledge of React (JSX), Tailwind CSS, and Git for front-end development.",
+    },
+  ],
+
   projects: [
     {
-      name: "AI Dev Roundup Newsletter",
+      name: "Vital Number",
       description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "A secure communication management platform for Canadian physicians, currently in beta. It integrates with existing phone lines to give doctors virtual numbers, rules-based call routing, and caller ID privacy without changing how they take calls.",
+      link: "https://vitalnumber.co",
+      image: "/images/projects/vital-number/Vital1.jpg",
+      skills: ["Next.js", "TypeScript", "Twilio API", "Prisma", "PostgreSQL"],
     },
     {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
+      name: "OT Notes Assistant",
       description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "AI documentation system for an occupational therapy client. Converts voice and handwritten session notes into structured clinical reports, cutting documentation time by 80%.",
+      link: "",
+      image: "/images/projects/ot-notes-assistant/chat.png",
+      skills: ["n8n", "Google Gemini", "Automation"],
     },
     {
-      name: "ExtensionKit",
+      name: "eCommerce Marketing Analytics Pipeline",
       description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      link: "https://extensionkit.io/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "Marketing analytics pipeline consolidating multi-channel spend and revenue data into automated dashboards, giving the client near real-time profitability insight instead of month-end guesswork.",
+      link: "",
+      image: "/images/projects/vitruvi/byob.png",
+      skills: ["Python", "Google BigQuery", "Dashboards"],
+    },
+    {
+      name: "Baseball Prospectus Toronto",
+      description:
+        "Co-founded BlueJaysPlus.com, a sabermetrics-focused sports analytics publication that grew to 500k-1M annual page views and was acquired by Baseball Prospectus. Bylines in ESPN and the Baseball Prospectus Annual.",
+      link: "",
+      image: "/images/projects/baseball-prospectus-toronto/webpage.png",
+      skills: ["Analytics", "Content Strategy", "Audience Growth"],
     },
   ],
+
   experience: [
     {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
+      company: "MG Insights",
+      title: "Growth Marketing & AI Consultant",
+      dateRange: "2025 - Present",
       bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
+        "Delivered AI automation and marketing solutions for eCommerce and healthcare clients, translating technical capabilities into measurable business outcomes.",
+        "Engineered AI documentation system for an occupational therapy client using n8n and Google Gemini, automating conversion of voice/handwritten notes to clinical reports and reducing documentation time by 80%.",
+        "Deployed secure patient communication system for a healthcare client using n8n and Twilio APIs with intelligent routing and caller ID privacy.",
+        "Built marketing analytics pipeline for an eCommerce client using Python and Google BigQuery, consolidating multi-channel data into automated dashboards for near real-time profitability insights.",
       ],
     },
     {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
+      company: "Vitruvi",
+      title: "Director, Direct-to-Consumer & Growth Marketing",
+      dateRange: "2023 - 2025",
       bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
+        "Owned and scaled the company's largest sales channel, reporting directly to the COO while developing growth strategies that delivered 4x revenue expansion and the channel's first profitable year.",
+        "Orchestrated cross-functional product launch, aligning Marketing, Product, and Operations around unified metrics and generating $1.5M+ first-year revenue.",
+        "Architected systematic paid media testing framework, scaling investment to multi-million dollar levels while improving ROAS by over 30%.",
       ],
     },
     {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
+      company: "Vitruvi",
+      title: "Manager, Growth Marketing",
+      dateRange: "2019 - 2022",
       bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
+        "Managed multi-channel demand generation across Shopify and Amazon, executing integrated campaigns with Content, Affiliate, and Influencer teams.",
+        "Led cross-functional rebrand spanning Marketing, Design, and Development, managing external partners through a complex Shopify implementation with dynamic bundling that improved AOV by 20%+.",
+        "Engineered automated reporting infrastructure in R consolidating cross-channel sales data, improving forecast accuracy by 30%.",
+      ],
+    },
+    {
+      company: "Major Tom Agency",
+      title: "Analyst, Performance Marketing",
+      dateRange: "2017 - 2019",
+      bullets: [
+        "Drove campaign optimization across $3M+ in client ad spend, working with account managers across 30+ accounts to exceed ROI and efficiency targets.",
+        "Built automated performance dashboards in Tableau and Google Data Studio, eliminating 20+ hours of manual weekly reporting while enabling real-time client insights.",
+      ],
+    },
+    {
+      company: "Saab Technologies",
+      title: "Coordinator, Marketing & Sales",
+      dateRange: "2016",
+      bullets: [
+        "Partnered with Sales teams across North America and Europe to drive B2B lead generation through targeted digital campaigns and market research.",
+        "Optimized CRM data architecture to build scalable marketing operations, improving campaign targeting and aligning Marketing and Sales around pipeline objectives.",
+      ],
+    },
+    {
+      company: "Baseball Prospectus Toronto",
+      title: "Co-Founder & Managing Editor",
+      dateRange: "2013 - 2017",
+      bullets: [
+        "Founded and scaled BlueJaysPlus.com, a pioneering sabermetrics-focused sports content platform, acquired by Baseball Prospectus.",
+        "Grew the site to 500k-1M annual page views, establishing it as a leading source for advanced baseball analytics.",
+        "Published expert analysis in leading sports media outlets including ESPN and the Baseball Prospectus Annual (2016-2017).",
       ],
     },
   ],
+
   education: [
     {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
+      school: "UBC Sauder School of Business",
+      degree: "Bachelor of Commerce (BCom)",
+      dateRange: "",
       achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",
-      ],
-    },
-    {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
-      achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
+        "Advanced coursework in Marketing and Business Technology Management.",
       ],
     },
   ],

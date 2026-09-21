@@ -131,11 +131,22 @@ import { siteConfig } from "../config";
   </svg>
   <div class="h-full mx-auto p-8 sm:p-12 md:p-24 flex items-center">
     <div>
-      <h2
-        class="text-pretty text-xl sm:text-2xl md:text-5xl font-bold tracking-tight text-gray-700 animate-fade-in"
-      >
-        Hello! 👋
-      </h2>
+      <div class="flex items-center gap-4 animate-fade-in">
+        {
+          siteConfig.avatar && (
+            <img
+              src={siteConfig.avatar}
+              alt={siteConfig.name}
+              class="h-14 w-14 sm:h-16 sm:w-16 rounded-full object-cover ring-2 ring-white shadow-md"
+            />
+          )
+        }
+        <h2
+          class="text-pretty text-xl sm:text-2xl md:text-4xl font-bold tracking-tight text-gray-700"
+        >
+          Hello! 👋
+        </h2>
+      </div>
       <h1
         class="mt-6 sm:mt-8 md:mt-10 text-pretty text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight text-gray-800 animate-fade-in animation-delay-200"
       >
@@ -146,8 +157,46 @@ import { siteConfig } from "../config";
       <p
         class="mt-4 sm:mt-6 md:mt-8 text-pretty text-base sm:text-lg md:text-xl/8 font-medium text-gray-600 animate-fade-in animation-delay-400"
       >
-        {siteConfig.title}
+        {siteConfig.headline || siteConfig.title}
       </p>
+      {
+        siteConfig.location && (
+          <p class="mt-2 text-sm sm:text-base text-gray-500 animate-fade-in animation-delay-400">
+            {siteConfig.location}
+          </p>
+        )
+      }
+      {
+        siteConfig.calendarLink && (
+          <a
+            href={siteConfig.calendarLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-8 inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm sm:text-base font-medium text-white shadow-lg transition-transform duration-300 hover:-translate-y-0.5 animate-fade-in animation-delay-600"
+            style={`background-color: ${siteConfig.accentColor}`}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-5 w-5"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" />
+              <path d="M16 3v4" />
+              <path d="M8 3v4" />
+              <path d="M4 11h16" />
+              <path d="M11 15h1" />
+              <path d="M12 15v3" />
+            </svg>
+            Book a call
+          </a>
+        )
+      }
     </div>
   </div>
   <div
