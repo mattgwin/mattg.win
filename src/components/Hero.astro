@@ -1,5 +1,6 @@
 ---
 import { siteConfig } from "../config";
+import { asset } from "../utils/asset";
 ---
 
 <div
@@ -135,7 +136,7 @@ import { siteConfig } from "../config";
         {
           siteConfig.avatar && (
             <img
-              src={siteConfig.avatar}
+              src={asset(siteConfig.avatar)}
               alt={siteConfig.name}
               class="h-14 w-14 sm:h-16 sm:w-16 rounded-full object-cover ring-2 ring-white shadow-md"
             />

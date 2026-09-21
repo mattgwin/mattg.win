@@ -1,5 +1,6 @@
 ---
 import { siteConfig } from "../config";
+import { asset } from "../utils/asset";
 const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 ---
 
@@ -61,7 +62,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                       <div class="space-y-4">
                         {project.image && (
                           <img
-                            src={project.image}
+                            src={asset(project.image)}
                             alt={project.name}
                             loading="lazy"
                             class="w-full aspect-video object-cover rounded-lg sm:rounded-xl border border-gray-200 bg-white"
