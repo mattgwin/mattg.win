@@ -31,7 +31,7 @@ body {
 }
 
 /*
-  Markdown bodies on /work/<slug>. The template has no typography plugin, so
+  Markdown bodies on /projects/<slug>. The template has no typography plugin, so
   these are the handful of element styles the project write-ups actually use.
 */
 .prose-project {

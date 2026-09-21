@@ -2,7 +2,7 @@ import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 
 // One Markdown file per project. The frontmatter drives the card on the home
-// page; the body becomes the /work/<slug> detail page. `link` is optional and
+// page; the body becomes the /projects/<slug> detail page. `link` is optional and
 // only renders the "View live project" button when a project is actually public.
 const projects = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/projects" }),
