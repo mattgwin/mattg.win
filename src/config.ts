@@ -3,8 +3,7 @@ export const siteConfig = {
   title: "Growth Marketing & Analytics Expert",
   description:
     "Portfolio website showcasing my work as a Growth Marketing & Analytics Expert",
-  // "moss" brand from mattg.win (Once UI scheme-moss-700)
-  accentColor: "#54CC01",
+  accentColor: "#759F60",
 
   // Carried over from the Magic Portfolio build
   headline: "Marketing Analyst, eCommerce Enthusiast, & Developer",
