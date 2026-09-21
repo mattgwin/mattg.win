@@ -2,11 +2,12 @@
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 
-// https://astro.build/config
+// Vercel serves from the domain root, GitHub Pages from a project subpath.
+// Set PAGES_BASE=/mattg-win-devportfolio when building for Pages.
+const base = process.env.PAGES_BASE;
+
 export default defineConfig({
-  // Served from a GitHub Pages project subpath, so assets need the base prefix.
-  site: "https://mattgwin.github.io",
-  base: "/mattg-win-devportfolio",
+  ...(base ? { site: "https://mattgwin.github.io", base } : {}),
   vite: {
     plugins: [tailwindcss()],
   },
