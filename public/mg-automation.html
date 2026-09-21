@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MG Automation</title>
+<meta name="description" content="MG Automation is a private personal tool that reads the owner’s own Gmail, Calendar and Drive into a local notes and task system.">
+<style>
+  :root {
+    --paper:  #16161a;
+    --raised: #1f1f24;
+    --ink:    #ecebe6;
+    --muted:  #9a998f;
+    --edge:   #2e2e34;
+    --accent: #7d9b76;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --paper:  #faf9f5;
+      --raised: #ffffff;
+      --ink:    #1c1c19;
+      --muted:  #6d6c63;
+      --edge:   #e4e2d9;
+      --accent: #4d6b47;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.5rem 5rem;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { width: 100%; max-width: 42rem; margin: 0 auto; }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 .35rem; letter-spacing: -0.01em; }
+  h2 { font-size: 1.05rem; margin: 2.25rem 0 .5rem; letter-spacing: -0.005em; }
+  p, li { color: var(--ink); margin: 0 0 .9rem; }
+  ul { padding-left: 1.15rem; }
+  li { margin-bottom: .4rem; }
+  .meta { color: var(--muted); font-size: .875rem; margin-bottom: 2rem; }
+  .lede { color: var(--muted); }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  hr { border: 0; border-top: 1px solid var(--edge); margin: 2.5rem 0; }
+  .note {
+    background: var(--raised);
+    border: 1px solid var(--edge);
+    border-radius: .6rem;
+    padding: 1rem 1.15rem;
+    margin: 1.25rem 0;
+  }
+  .note p:last-child { margin-bottom: 0; }
+  footer { color: var(--muted); font-size: .875rem; margin-top: 3rem; }
+</style>
+</head>
+<body>
+<main>
+<h1>MG Automation</h1>
+<p class="lede">A private tool that reads Matt Gwin's own Gmail, Google Calendar and Google Drive into a personal notes and task system running on his own computers.</p>
+
+<h2>What it is</h2>
+<p>MG Automation is a personal knowledge vault. Mail, calendar events and documents are read on demand, summarised, and filed as notes and tasks in a private file store that syncs only between Matt's own devices. It replaces the manual work of reading an inbox and turning it into a to-do list.</p>
+
+<p>It is used by exactly one person, the owner of this domain. There is no sign-up, no hosted service, no other users, and nothing is offered to the public. This page exists because Google requires a published home page for the OAuth application behind it.</p>
+
+<h2>What it accesses, and why</h2>
+<ul>
+  <li><strong>Gmail</strong> &mdash; <code>gmail.readonly</code> to read messages and threads so they can be summarised and categorised, and <code>gmail.compose</code> to write replies as <em>drafts</em>. The app has no ability to send: a human opens the draft and presses send.</li>
+  <li><strong>Google Calendar</strong> &mdash; <code>calendar.events</code> to read commitments when planning a day, and to create or adjust time blocks around them.</li>
+  <li><strong>Google Drive</strong> &mdash; <code>drive.readonly</code> and <code>drive.file</code> to read a document's contents when a note needs to reference it.</li>
+</ul>
+
+<h2>What it will not do</h2>
+<ul>
+  <li>Send email. Ever. Drafts only.</li>
+  <li>Delete mail, trash threads, or mark anything as spam.</li>
+  <li>Share, sell, rent or monetise data in any form.</li>
+  <li>Use any data for advertising, profiling, or training a model.</li>
+</ul>
+
+<div class="note">
+<p>MG Automation's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+</div>
+
+<h2>Where data is stored</h2>
+<p>Nowhere this app operates. Content is fetched when a request is made, used to produce a note, and the note lands in a private file vault on Matt's own machines. There is no server, no database, and no analytics belonging to MG Automation that holds Google user data. Access can be withdrawn at any time from <a href="https://myaccount.google.com/permissions" rel="noopener">Google Account permissions</a>.</p>
+
+<h2>Details</h2>
+<p>Operated by Matt Gwin &middot; <a href="mailto:hello@mattg.win">hello@mattg.win</a><br>
+<a href="/privacy">Privacy Policy</a> &middot; <a href="/terms">Terms of Service</a></p>
+<hr>
+<footer><a href="/mg-automation">MG Automation</a> &middot; <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a> &middot; <a href="/">mattg.win</a></footer>
+</main>
+</body>
+</html>

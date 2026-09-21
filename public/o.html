@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Opening in Obsidian</title>
+<style>
+  :root {
+    --paper:  #16161a;
+    --raised: #1f1f24;
+    --ink:    #ecebe6;
+    --muted:  #9a998f;
+    --edge:   #2e2e34;
+    --accent: #7d9b76;
+    --accent-ink: #14170f;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --paper:  #faf9f5;
+      --raised: #ffffff;
+      --ink:    #1c1c19;
+      --muted:  #6d6c63;
+      --edge:   #e4e2d9;
+      --accent: #4d6b47;
+      --accent-ink: #ffffff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    line-height: 1.55;
+    -webkit-text-size-adjust: 100%;
+  }
+  main {
+    width: 100%;
+    max-width: 24rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    text-align: center;
+  }
+  h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .slug {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .85rem;
+    color: var(--muted);
+    word-break: break-all;
+    margin: 0;
+  }
+  a.btn {
+    display: block;
+    background: var(--accent);
+    color: var(--accent-ink);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .9rem 1.25rem;
+    border-radius: 8px;
+  }
+  a.btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  .hint { font-size: .85rem; color: var(--muted); margin: 0; }
+  .hint a { color: var(--muted); }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+  <h1 id="heading">Opening in Obsidian…</h1>
+  <p class="slug" id="slug"></p>
+  <a class="btn" id="manual" href="#" hidden>Open in Obsidian</a>
+  <p class="hint" id="hint" hidden>
+    If nothing happens, Obsidian may not be installed on this device, or the
+    vault name may not match. <a href="/">mattg.win</a>
+  </p>
+</main>
+<script>
+(function () {
+  var params = new URLSearchParams(window.location.search);
+  var vault = params.get("v") || "mgdex";
+  var file = params.get("f") || "";
+
+  var uri = "obsidian://open?vault=" + encodeURIComponent(vault);
+  if (file) uri += "&file=" + encodeURIComponent(file);
+
+  document.getElementById("slug").textContent = file || vault;
+
+  var manual = document.getElementById("manual");
+  manual.href = uri;
+
+  // Attempt the handoff immediately; the tap that got here is the user gesture.
+  try {
+    window.location.replace(uri);
+  } catch (err) {
+    /* fall through to the manual button */
+  }
+
+  // If the app took over, this page is backgrounded and the timer never matters.
+  // If it didn't, surface the manual path.
+  setTimeout(function () {
+    document.getElementById("heading").textContent = "Open in Obsidian";
+    manual.hidden = false;
+    document.getElementById("hint").hidden = false;
+  }, 1200);
+})();
+</script>
+</body>
+</html>

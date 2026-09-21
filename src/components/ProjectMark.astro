@@ -1,6 +1,5 @@
 ---
 import { siteConfig } from "../config";
-import { asset } from "../utils/asset";
 
 interface Props {
   logo?: string;
@@ -21,7 +20,7 @@ const {
 {
   logo ? (
     <img
-      src={asset(logo)}
+      src={logo}
       alt=""
       loading="lazy"
       class={`shrink-0 object-contain ${size}`}

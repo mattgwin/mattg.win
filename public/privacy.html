@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy | mattg.win</title>
+<meta name="description" content="Privacy policy for MG Automation, a personal Google OAuth application used solely by the site owner.">
+<style>
+  :root {
+    --paper:  #16161a;
+    --raised: #1f1f24;
+    --ink:    #ecebe6;
+    --muted:  #9a998f;
+    --edge:   #2e2e34;
+    --accent: #7d9b76;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --paper:  #faf9f5;
+      --raised: #ffffff;
+      --ink:    #1c1c19;
+      --muted:  #6d6c63;
+      --edge:   #e4e2d9;
+      --accent: #4d6b47;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.5rem 5rem;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { width: 100%; max-width: 42rem; margin: 0 auto; }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 .35rem; letter-spacing: -0.01em; }
+  h2 { font-size: 1.05rem; margin: 2.25rem 0 .5rem; letter-spacing: -0.005em; }
+  p, li { color: var(--ink); margin: 0 0 .9rem; }
+  ul { padding-left: 1.15rem; }
+  li { margin-bottom: .4rem; }
+  .meta { color: var(--muted); font-size: .875rem; margin-bottom: 2rem; }
+  .lede { color: var(--muted); }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  hr { border: 0; border-top: 1px solid var(--edge); margin: 2.5rem 0; }
+  .note {
+    background: var(--raised);
+    border: 1px solid var(--edge);
+    border-radius: .6rem;
+    padding: 1rem 1.15rem;
+    margin: 1.25rem 0;
+  }
+  .note p:last-child { margin-bottom: 0; }
+  footer { color: var(--muted); font-size: .875rem; margin-top: 3rem; }
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy Policy</h1>
+<p class="meta">Last updated 20 September 2026</p>
+
+<p class="lede">This policy covers <strong>MG Automation</strong>, a personal Google OAuth application used by one person: Matt Gwin, the owner of this site. It is not a product, it has no customers, and it is not offered to anyone else.</p>
+
+<h2>What the app is</h2>
+<p>MG Automation connects Matt's own Google accounts to a personal note-taking and task system running locally on his own computers. It exists so that software can read his mail and calendar on his behalf and help him organise it. There is no hosted service, no sign-up, and no other users.</p>
+
+<h2>What data it accesses</h2>
+<p>Only data belonging to the Google accounts Matt explicitly authorises. Specifically:</p>
+<ul>
+  <li><strong>Gmail</strong> (<code>gmail.readonly</code>, <code>gmail.compose</code>): reads message and thread content in order to summarise and categorise it, and creates draft replies.</li>
+  <li><strong>Google Calendar</strong> (<code>calendar.events</code>): reads events to understand availability, and creates or updates events for planning.</li>
+  <li><strong>Google Drive</strong> (<code>drive.readonly</code>, <code>drive.file</code>): reads file content and metadata when asked to reference a document.</li>
+</ul>
+
+<h2>What it does not do</h2>
+<ul>
+  <li>It <strong>never sends email</strong>. Replies are written as drafts and only a human presses send.</li>
+  <li>It does not delete mail, and it does not mark anything as spam.</li>
+  <li>It does not transmit data to any third party beyond the AI model provider processing a given request.</li>
+  <li>It does not sell, rent, share or monetise data, in any form, ever.</li>
+  <li>It does not use data for advertising, profiling, or training any model.</li>
+</ul>
+
+<h2>Where data goes</h2>
+<p>Data is fetched on demand and used to produce notes, summaries and tasks that are stored in a private file vault on Matt's own machines, synced only between his own devices. Message content is passed to the AI model provider that handles the request, solely to generate that response, and is not retained by this app on any server. No database, analytics system, or logging service operated by this app stores Google user data.</p>
+
+<h2>Limited Use disclosure</h2>
+<div class="note">
+<p>MG Automation's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+</div>
+
+<h2>Retention and deletion</h2>
+<p>Derived notes live in a personal file vault and are deleted by deleting the files. Access can be revoked at any time from <a href="https://myaccount.google.com/permissions" rel="noopener">Google Account permissions</a>, which immediately and permanently ends the app's ability to read anything.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:hello@mattg.win">hello@mattg.win</a>.</p>
+<hr>
+<footer><a href="/mg-automation">MG Automation</a> &middot; <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a> &middot; <a href="/">mattg.win</a></footer>
+</main>
+</body>
+</html>

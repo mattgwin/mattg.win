@@ -1,7 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import { siteConfig } from "../config";
-import { asset } from "../utils/asset";
 
 const hasProjects = (await getCollection("projects")).length > 0;
 const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
@@ -130,14 +129,14 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
       <div class="hidden md:block flex flex-col md:items-end gap-4">
         <nav class="flex gap-x-8">
           <a
-            href={asset("/#about")}
+            href="/#about"
             class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
             >About</a
           >
           {
             hasProjects && (
               <a
-                href={asset("/#projects")}
+                href="/#projects"
                 class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
               >
                 Projects
@@ -147,7 +146,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
           {
             hasExperience && (
               <a
-                href={asset("/#experience")}
+                href="/#experience"
                 class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
               >
                 Experience
@@ -157,7 +156,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
           {
             hasEducation && (
               <a
-                href={asset("/#education")}
+                href="/#education"
                 class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
               >
                 Education

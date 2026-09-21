@@ -1,0 +1,47 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { siteConfig } from "../config";
+---
+
+<Layout title="Page not found" noindex>
+  <main
+    class="relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-white px-8 py-24"
+    style={`--accent-color: ${siteConfig.accentColor}`}
+  >
+    <div
+      class="absolute inset-0 -z-10"
+      style={`background: radial-gradient(ellipse 950px 1350px at 0% 0%, ${siteConfig.accentColor}6b 0%, ${siteConfig.accentColor}47 22%, ${siteConfig.accentColor}24 45%, rgba(13, 10, 0, 0.35) 72%, rgba(13, 10, 0, 0.85) 90%, #0d0a00 100%)`}
+    >
+    </div>
+
+    <div class="mx-auto max-w-lg text-center">
+      <p
+        class="text-sm font-medium tracking-widest text-white/60 uppercase"
+      >
+        404
+      </p>
+      <h1 class="mt-3 text-3xl font-semibold text-white sm:text-4xl">
+        This page doesn't exist
+      </h1>
+      <p class="mt-4 text-base text-white/70">
+        The link may be out of date, or the page may have moved.
+      </p>
+
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <a
+          href="/"
+          class="rounded-md px-5 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
+          style={`background-color: ${siteConfig.accentColor}`}
+        >
+          Back to home
+        </a>
+        <a
+          href="/#projects"
+          class="rounded-md border border-white/25 px-5 py-2.5 text-sm font-medium text-white/90 transition-colors hover:bg-white/10"
+        >
+          See projects
+        </a>
+      </div>
+    </div>
+  </main>
+</Layout>

@@ -1,7 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import { siteConfig } from "../config";
-import { asset } from "../utils/asset";
 import ProjectMark from "./ProjectMark.astro";
 
 const projects = (await getCollection("projects")).sort(
@@ -30,7 +29,7 @@ const hasProjects = projects.length > 0;
               {projects.map((project) => (
                 <div class="group relative">
                   <a
-                    href={asset(`/projects/${project.id}/`)}
+                    href={`/projects/${project.id}/`}
                     class="flex items-center gap-5 sm:gap-6 relative p-5 sm:p-6 md:p-7 pr-16 sm:pr-20 md:pr-24 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200 transition-all duration-300 hover:bg-gray-100 hover:shadow-xl hover:border-gray-300 hover:-translate-y-1"
                   >
                     <ProjectMark

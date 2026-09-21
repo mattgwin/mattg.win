@@ -8,9 +8,10 @@ export const siteConfig = {
   // Carried over from the Magic Portfolio build
   headline: "Marketing Analyst, eCommerce Enthusiast, & Developer",
   location: "Vancouver, BC",
-  // Booking link from the old /about page calendar CTA
-  calendarLink:
-    "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0LQK10cx6SYPIcCIdoRhiSfhMkHzqh4Urzm7bbzxNen7jP5ulvhwAjA7h5ZbZBiKur2WE9P1Qq",
+  // Booking link from the old /about page calendar CTA. Points at the /meeting
+  // redirect (vercel.json) rather than the provider URL, so swapping booking
+  // tools is a one-line redirect change instead of a site edit.
+  calendarLink: "/meeting",
 
   social: {
     email: "hello@mattg.win",
