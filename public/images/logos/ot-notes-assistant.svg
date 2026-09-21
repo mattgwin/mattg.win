@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" fill="none">
+  <g stroke="#759F60" stroke-width="72" stroke-linecap="round" stroke-linejoin="round">
+    <!-- document -->
+    <rect x="856" y="614" width="684" height="733" rx="42"/>
+    <!-- ruled lines -->
+    <path d="M1071 797 H1400"/>
+    <path d="M1071 1128 H1400"/>
+    <!-- waveform, resolving into the middle rule -->
+    <path d="M390 960 H545 L600 780 L670 1185 L790 600 L884 1178 C928 1178 944 965 1010 965 H1400"/>
+  </g>
+</svg>
