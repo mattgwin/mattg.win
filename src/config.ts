@@ -42,14 +42,19 @@ export const siteConfig = {
 
   experience: [
     {
-      company: "MG Insights",
-      title: "Growth Marketing & AI Consultant",
+      company: "INDOCHINO",
+      title: "Senior Manager, Acquisition & Retention",
       dateRange: "2025 - Present",
       bullets: [
-        "Delivered AI automation and marketing solutions for eCommerce and healthcare clients, translating technical capabilities into measurable business outcomes.",
-        "Engineered AI documentation system for an occupational therapy client using n8n and Google Gemini, automating conversion of voice/handwritten notes to clinical reports and reducing documentation time by 80%.",
-        "Deployed secure patient communication system for a healthcare client using n8n and Twilio APIs with intelligent routing and caller ID privacy.",
-        "Built marketing analytics pipeline for an eCommerce client using Python and Google BigQuery, consolidating multi-channel data into automated dashboards for near real-time profitability insights.",
+        "Own the full acquisition and retention funnel for a premium made-to-measure menswear brand, directing $10M+ in annual working media across Google and Meta, a 13-vendor agency and martech stack, and a team of two.",
+      ],
+    },
+    {
+      company: "MG Insights",
+      title: "Growth Marketing & AI Consultant",
+      dateRange: "2025 - 2026",
+      bullets: [
+        "Built AI automation and marketing analytics systems for eCommerce and healthcare clients, spanning n8n and LLM-based workflow automation, secure patient communication infrastructure, and BigQuery reporting pipelines.",
       ],
     },
     {
@@ -57,19 +62,15 @@ export const siteConfig = {
       title: "Director, Direct-to-Consumer & Growth Marketing",
       dateRange: "2023 - 2025",
       bullets: [
-        "Owned and scaled the company's largest sales channel, reporting directly to the COO while developing growth strategies that delivered 4x revenue expansion and the channel's first profitable year.",
-        "Orchestrated cross-functional product launch, aligning Marketing, Product, and Operations around unified metrics and generating $1.5M+ first-year revenue.",
-        "Architected systematic paid media testing framework, scaling investment to multi-million dollar levels while improving ROAS by over 30%.",
+        "Owned the company's largest sales channel end to end, reporting to the COO across paid media, lifecycle, site experience, and product launches, and leading a team of internal specialists and agency partners.",
       ],
     },
     {
       company: "Vitruvi",
       title: "Manager, Growth Marketing",
-      dateRange: "2019 - 2022",
+      dateRange: "2019 - 2023",
       bullets: [
-        "Managed multi-channel demand generation across Shopify and Amazon, executing integrated campaigns with Content, Affiliate, and Influencer teams.",
-        "Led cross-functional rebrand spanning Marketing, Design, and Development, managing external partners through a complex Shopify implementation with dynamic bundling that improved AOV by 20%+.",
-        "Engineered automated reporting infrastructure in R consolidating cross-channel sales data, improving forecast accuracy by 30%.",
+        "Ran multi-channel demand generation across Shopify and Amazon, bringing Meta and Google Ads in-house and building the lifecycle, reporting, and rebrand infrastructure behind them.",
       ],
     },
     {
@@ -77,8 +78,7 @@ export const siteConfig = {
       title: "Analyst, Performance Marketing",
       dateRange: "2017 - 2019",
       bullets: [
-        "Drove campaign optimization across $3M+ in client ad spend, working with account managers across 30+ accounts to exceed ROI and efficiency targets.",
-        "Built automated performance dashboards in Tableau and Google Data Studio, eliminating 20+ hours of manual weekly reporting while enabling real-time client insights.",
+        "Managed paid media performance across 30+ client accounts and $3M+ in annual ad spend, partnering with account teams on optimization, measurement, and automated reporting.",
       ],
     },
     {
@@ -86,8 +86,7 @@ export const siteConfig = {
       title: "Coordinator, Marketing & Sales",
       dateRange: "2016",
       bullets: [
-        "Partnered with Sales teams across North America and Europe to drive B2B lead generation through targeted digital campaigns and market research.",
-        "Optimized CRM data architecture to build scalable marketing operations, improving campaign targeting and aligning Marketing and Sales around pipeline objectives.",
+        "Supported B2B demand generation for Sales teams across North America and Europe, covering market research, digital campaigns, and CRM data operations for an enterprise maritime software product.",
       ],
     },
     {
@@ -95,9 +94,7 @@ export const siteConfig = {
       title: "Co-Founder & Managing Editor",
       dateRange: "2013 - 2017",
       bullets: [
-        "Founded and scaled BlueJaysPlus.com, a pioneering sabermetrics-focused sports content platform, acquired by Baseball Prospectus.",
-        "Grew the site to 500k-1M annual page views, establishing it as a leading source for advanced baseball analytics.",
-        "Published expert analysis in leading sports media outlets including ESPN and the Baseball Prospectus Annual (2016-2017).",
+        "Co-founded and ran a sabermetrics publication reaching 500k-1M annual page views, leading editorial and a contributor roster through to its acquisition by Baseball Prospectus.",
       ],
     },
   ],
