@@ -7,7 +7,6 @@ export const siteConfig = {
   accentColor: "#54CC01",
 
   // Carried over from the Magic Portfolio build
-  avatar: "/images/avatar.jpg",
   headline: "Marketing Analyst, eCommerce Enthusiast, & Developer",
   location: "Vancouver, BC",
   // Booking link from the old /about page calendar CTA
