@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import { siteConfig } from "../config";
 import { asset } from "../utils/asset";
+import ProjectMark from "./ProjectMark.astro";
 
 const projects = (await getCollection("projects")).sort(
   (a, b) => a.data.order - b.data.order,
@@ -32,23 +33,12 @@ const hasProjects = projects.length > 0;
                     href={asset(`/projects/${project.id}/`)}
                     class="flex items-center gap-5 sm:gap-6 relative p-5 sm:p-6 md:p-7 pr-16 sm:pr-20 md:pr-24 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200 transition-all duration-300 hover:bg-gray-100 hover:shadow-xl hover:border-gray-300 hover:-translate-y-1"
                   >
-                    {/* Real logo where the project has one, initials otherwise. */}
-                    {project.data.logo ? (
-                      <img
-                        src={asset(project.data.logo)}
-                        alt=""
-                        loading="lazy"
-                        class="shrink-0 h-14 w-14 sm:h-16 sm:w-16 object-contain"
-                      />
-                    ) : (
-                      <span
-                        aria-hidden="true"
-                        class="shrink-0 h-14 w-14 sm:h-16 sm:w-16 rounded-full border-2 flex items-center justify-center text-base sm:text-lg font-bold tracking-tight"
-                        style={`border-color: ${siteConfig.accentColor}; color: ${siteConfig.accentColor}`}
-                      >
-                        {project.data.monogram ?? project.data.name.charAt(0)}
-                      </span>
-                    )}
+                    <ProjectMark
+                      logo={project.data.logo}
+                      monogram={project.data.monogram}
+                      name={project.data.name}
+                      size="h-14 w-14 sm:h-16 sm:w-16 text-base sm:text-lg"
+                    />
 
                     <div class="min-w-0">
                       <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 leading-tight">

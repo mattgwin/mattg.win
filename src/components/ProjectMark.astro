@@ -1,0 +1,38 @@
+---
+import { siteConfig } from "../config";
+import { asset } from "../utils/asset";
+
+interface Props {
+  logo?: string;
+  monogram?: string;
+  name: string;
+  /** Tailwind size classes, so the card and the detail page can differ. */
+  size?: string;
+}
+
+const {
+  logo,
+  monogram,
+  name,
+  size = "h-14 w-14 sm:h-16 sm:w-16",
+} = Astro.props;
+---
+
+{
+  logo ? (
+    <img
+      src={asset(logo)}
+      alt=""
+      loading="lazy"
+      class={`shrink-0 object-contain ${size}`}
+    />
+  ) : (
+    <span
+      aria-hidden="true"
+      class={`shrink-0 rounded-full border-2 flex items-center justify-center font-bold tracking-tight ${size}`}
+      style={`border-color: ${siteConfig.accentColor}; color: ${siteConfig.accentColor}`}
+    >
+      {monogram ?? name.charAt(0)}
+    </span>
+  )
+}
