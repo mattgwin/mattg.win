@@ -36,40 +36,8 @@ export const siteConfig = {
     "Northbeam",
   ],
 
-  projects: [
-    {
-      name: "Vital Number",
-      description:
-        "A secure communication management platform for Canadian physicians, currently in beta. It integrates with existing phone lines to give doctors virtual numbers, rules-based call routing, and caller ID privacy without changing how they take calls.",
-      link: "https://vitalnumber.co",
-      image: "/images/projects/vital-number/Vital1.jpg",
-      skills: ["Next.js", "TypeScript", "Twilio API", "Prisma", "PostgreSQL"],
-    },
-    {
-      name: "OT Notes Assistant",
-      description:
-        "AI documentation system for an occupational therapy client. Converts voice and handwritten session notes into structured clinical reports, cutting documentation time by 80%.",
-      link: "",
-      image: "/images/projects/ot-notes-assistant/chat.png",
-      skills: ["n8n", "Google Gemini", "Automation"],
-    },
-    {
-      name: "eCommerce Marketing Analytics Pipeline",
-      description:
-        "Marketing analytics pipeline consolidating multi-channel spend and revenue data into automated dashboards, giving the client near real-time profitability insight instead of month-end guesswork.",
-      link: "",
-      image: "/images/projects/vitruvi/byob.png",
-      skills: ["Python", "Google BigQuery", "Dashboards"],
-    },
-    {
-      name: "Baseball Prospectus Toronto",
-      description:
-        "Co-founded BlueJaysPlus.com, a sabermetrics-focused sports analytics publication that grew to 500k-1M annual page views and was acquired by Baseball Prospectus. Bylines in ESPN and the Baseball Prospectus Annual.",
-      link: "",
-      image: "/images/projects/baseball-prospectus-toronto/webpage.png",
-      skills: ["Analytics", "Content Strategy", "Audience Growth"],
-    },
-  ],
+  // Projects live in src/content/projects/*.md so each one can have a
+  // detail page body; see src/content.config.ts.
 
   experience: [
     {

@@ -1,0 +1,125 @@
+---
+import { getCollection, render } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import Footer from "../../components/Footer.astro";
+import { siteConfig } from "../../config";
+import { asset } from "../../utils/asset";
+
+export async function getStaticPaths() {
+  const projects = await getCollection("projects");
+  return projects.map((project) => ({
+    params: { slug: project.id },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+const { name, description, link, images, skills } = project.data;
+---
+
+<Layout title={name} description={description}>
+  <article class="px-8 sm:px-12 md:px-16 lg:px-24 pt-16 md:pt-24 pb-16">
+    <div class="mx-auto max-w-3xl">
+      <a
+        href={asset("/#projects")}
+        class="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-gray-800 transition-colors"
+      >
+        <svg
+          class="h-4 w-4"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 12H5M11 18l-6-6 6-6"></path>
+        </svg>
+        Projects
+      </a>
+
+      <h1
+        class="mt-6 text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-gray-900"
+      >
+        {name}
+      </h1>
+
+      <p class="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed">
+        {description}
+      </p>
+
+      {
+        link && (
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-8 inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm sm:text-base font-medium text-white shadow-lg transition-transform duration-300 hover:-translate-y-0.5"
+            style={`background-color: ${siteConfig.accentColor}`}
+          >
+            View live project
+            <svg
+              class="h-4 w-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 17L17 7M17 7H7M17 7V17"
+              />
+            </svg>
+          </a>
+        )
+      }
+
+      {
+        skills.length > 0 && (
+          <div class="mt-8 flex flex-wrap gap-1.5 sm:gap-2">
+            {skills.map((skill) => (
+              <span class="px-2.5 sm:px-3 py-1 sm:py-1.5 bg-gray-900 text-white rounded-md sm:rounded-lg text-xs sm:text-sm font-medium">
+                {skill}
+              </span>
+            ))}
+          </div>
+        )
+      }
+
+      {
+        images.length > 0 && (
+          <img
+            src={asset(images[0])}
+            alt={name}
+            class="mt-10 w-full aspect-video object-cover rounded-xl border border-gray-200"
+          />
+        )
+      }
+
+      <div class="prose-project mt-10">
+        <Content />
+      </div>
+
+      {
+        images.length > 1 && (
+          <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {images.slice(1).map((src) => (
+              <img
+                src={asset(src)}
+                alt={name}
+                loading="lazy"
+                class="w-full aspect-video object-cover rounded-xl border border-gray-200"
+              />
+            ))}
+          </div>
+        )
+      }
+    </div>
+  </article>
+  <Footer />
+</Layout>
