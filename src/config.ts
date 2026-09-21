@@ -37,41 +37,6 @@ export const siteConfig = {
     "Northbeam",
   ],
 
-  // Richer version of the old "Technical Skills" section, which had a
-  // description per area rather than bare tags.
-  skillAreas: [
-    {
-      title: "Data Analysis & Visualization",
-      description:
-        "Comprehensive data analysis: R/Python analytics, robust data pipelines, and insightful dashboards via Tableau/Data Studio for data-driven results.",
-    },
-    {
-      title: "AI Automation & Workflow Engineering",
-      description:
-        "Production automations built with n8n, Google Gemini, and Twilio APIs, turning manual back-office processes into reliable, auditable pipelines.",
-    },
-    {
-      title: "Shopify eCommerce Management",
-      description:
-        "Platform management and front-end development using Liquid, HTML, and CSS to enhance user experience and drive sales.",
-    },
-    {
-      title: "Paid Search & Paid Social Advertising",
-      description:
-        "Management and strategic setup of high-ROI paid campaigns across Google Ads, Facebook Ads Manager, TikTok Ads, Pinterest Ads, Snap Ads, and more.",
-    },
-    {
-      title: "Conversion Optimization, Analytics, & Tracking",
-      description:
-        "Tracking set-up and actionable insights for conversion optimization via Northbeam, Google Analytics, Google Tag Manager, and Hotjar.",
-    },
-    {
-      title: "Front End Web Development",
-      description:
-        "Working knowledge of React (JSX), Tailwind CSS, and Git for front-end development.",
-    },
-  ],
-
   projects: [
     {
       name: "Vital Number",
