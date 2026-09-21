@@ -25,16 +25,43 @@ const hasProjects = projects.length > 0;
           </div>
 
           <div class="lg:col-span-8">
-            <div class="space-y-8">
-              {projects.map((project, index) => (
+            <div class="space-y-4 sm:space-y-6">
+              {projects.map((project) => (
                 <div class="group relative">
                   <a
                     href={asset(`/projects/${project.id}/`)}
-                    class="block relative p-4 sm:p-6 md:p-8 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200 transition-all duration-300 hover:bg-gray-100 hover:shadow-xl hover:border-gray-300 hover:-translate-y-1"
+                    class="flex items-center gap-5 sm:gap-6 relative p-5 sm:p-6 md:p-7 pr-16 sm:pr-20 md:pr-24 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200 transition-all duration-300 hover:bg-gray-100 hover:shadow-xl hover:border-gray-300 hover:-translate-y-1"
                   >
-                    <div class="absolute top-4 right-4 sm:top-6 sm:right-6 md:top-8 md:right-8 w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 flex items-center justify-center bg-gray-900 rounded-full text-white transition-all duration-300 group-hover:bg-gray-700">
+                    {/* Real logo where the project has one, initials otherwise. */}
+                    {project.data.logo ? (
+                      <img
+                        src={asset(project.data.logo)}
+                        alt=""
+                        loading="lazy"
+                        class="shrink-0 h-14 w-14 sm:h-16 sm:w-16 rounded-full object-cover bg-gray-100"
+                      />
+                    ) : (
+                      <span
+                        aria-hidden="true"
+                        class="shrink-0 h-14 w-14 sm:h-16 sm:w-16 rounded-full border-2 flex items-center justify-center text-base sm:text-lg font-bold tracking-tight"
+                        style={`border-color: ${siteConfig.accentColor}; color: ${siteConfig.accentColor}`}
+                      >
+                        {project.data.monogram ?? project.data.name.charAt(0)}
+                      </span>
+                    )}
+
+                    <div class="min-w-0">
+                      <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 leading-tight">
+                        {project.data.name}
+                      </h3>
+                      <p class="mt-1.5 text-sm sm:text-base text-gray-600 leading-relaxed">
+                        {project.data.tagline}
+                      </p>
+                    </div>
+
+                    <div class="absolute top-1/2 -translate-y-1/2 right-5 sm:right-6 md:right-7 w-10 h-10 sm:w-11 sm:h-11 flex items-center justify-center bg-gray-900 rounded-full text-white transition-all duration-300 group-hover:bg-gray-700">
                       <svg
-                        class="w-4 h-4 sm:w-4.5 sm:h-4.5 md:w-5 md:h-5 transition-transform duration-300 group-hover:translate-x-0.5"
+                        class="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 group-hover:translate-x-0.5"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -46,42 +73,6 @@ const hasProjects = projects.length > 0;
                           d="M5 12h14M13 6l6 6-6 6"
                         />
                       </svg>
-                    </div>
-
-                    <div class="space-y-4">
-                      {project.data.image && (
-                        <img
-                          src={asset(project.data.image)}
-                          alt={project.data.name}
-                          loading="lazy"
-                          class="w-full aspect-video object-cover rounded-lg sm:rounded-xl border border-gray-200"
-                        />
-                      )}
-                      <div>
-                        <span
-                          class="text-sm font-mono"
-                          style={{ color: siteConfig.accentColor }}
-                        >
-                          0{index + 1}
-                        </span>
-                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mt-1">
-                          {project.data.name}
-                        </h3>
-                      </div>
-
-                      <p class="text-base sm:text-lg text-gray-600 leading-relaxed pr-12 sm:pr-14 md:pr-16">
-                        {project.data.description}
-                      </p>
-
-                      {project.data.skills.length > 0 && (
-                        <div class="flex flex-wrap gap-1.5 sm:gap-2 pt-2">
-                          {project.data.skills.map((skill) => (
-                            <span class="px-2.5 sm:px-3 py-1 sm:py-1.5 bg-gray-900 text-white rounded-md sm:rounded-lg text-xs sm:text-sm font-medium transition-all duration-300 group-hover:bg-gray-800">
-                              {skill}
-                            </span>
-                          ))}
-                        </div>
-                      )}
                     </div>
                   </a>
                 </div>

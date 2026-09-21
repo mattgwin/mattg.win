@@ -1,6 +1,8 @@
 ---
 name: "eCommerce Marketing Analytics Pipeline"
 description: "Marketing analytics pipeline consolidating multi-channel spend and revenue data into automated dashboards, giving the client near real-time profitability insight instead of month-end guesswork."
+tagline: "Near real-time channel profitability from raw ad data"
+monogram: "AP"
 image: "/images/projects/vitruvi/byob.png"
 images:
   - "/images/projects/vitruvi/byob.png"

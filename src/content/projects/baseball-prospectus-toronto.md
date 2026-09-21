@@ -1,6 +1,8 @@
 ---
 name: "Baseball Prospectus Toronto"
 description: "Co-founded BlueJaysPlus.com, a sabermetrics-focused sports analytics publication that grew to 500k-1M annual page views and was acquired by Baseball Prospectus. Bylines in ESPN and the Baseball Prospectus Annual."
+tagline: "Sabermetrics publication, acquired by Baseball Prospectus"
+monogram: "BP"
 image: "/images/projects/baseball-prospectus-toronto/webpage.png"
 images:
   - "/images/projects/baseball-prospectus-toronto/webpage.png"

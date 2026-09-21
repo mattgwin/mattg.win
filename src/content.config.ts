@@ -8,7 +8,14 @@ const projects = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/projects" }),
   schema: z.object({
     name: z.string(),
+    // Long form, shown on the detail page.
     description: z.string(),
+    // One line, shown on the home page card.
+    tagline: z.string(),
+    // Circular mark on the card. Falls back to `monogram` when the project
+    // has no real logo of its own.
+    logo: z.string().optional(),
+    monogram: z.string().optional(),
     link: z.string().url().optional(),
     image: z.string().optional(),
     images: z.array(z.string()).default([]),

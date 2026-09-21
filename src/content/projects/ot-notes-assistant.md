@@ -1,6 +1,8 @@
 ---
 name: "OT Notes Assistant"
 description: "AI documentation system for an occupational therapy client. Converts voice and handwritten session notes into structured clinical reports, cutting documentation time by 80%."
+tagline: "AI clinical notes from voice and handwriting"
+monogram: "OT"
 image: "/images/projects/ot-notes-assistant/chat.png"
 images:
   - "/images/projects/ot-notes-assistant/chat.png"

@@ -1,6 +1,8 @@
 ---
 name: "Vital Number"
 description: "A secure communication management platform for Canadian physicians, currently in beta. It integrates with existing phone lines to give doctors virtual numbers, rules-based call routing, and caller ID privacy without changing how they take calls."
+tagline: "Secure patient calls for Canadian physicians"
+logo: "/images/logos/vital-number.png"
 link: "https://vitalnumber.co"
 image: "/images/projects/vital-number/Vital1.jpg"
 images:
