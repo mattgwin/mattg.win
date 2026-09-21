@@ -1,8 +1,9 @@
 ---
-name: "Baseball Prospectus Toronto"
-description: "Co-founded BlueJaysPlus.com, a sabermetrics-focused sports analytics publication that grew to 500k-1M annual page views and was acquired by Baseball Prospectus. Bylines in ESPN and the Baseball Prospectus Annual."
+name: "Blue Jays Plus"
+description: "Co-founded BlueJaysPlus.com, a sabermetrics-focused sports analytics publication that grew to 500k-1M annual page views and was acquired by Baseball Prospectus, who relaunched it as Baseball Prospectus Toronto. Bylines in ESPN and the Baseball Prospectus Annual."
 tagline: "Sabermetrics publication, acquired by Baseball Prospectus"
-monogram: "BP"
+logo: "/images/logos/baseball-prospectus.svg"
+link: "https://www.baseballprospectus.com"
 image: "/images/projects/baseball-prospectus-toronto/webpage.png"
 images:
   - "/images/projects/baseball-prospectus-toronto/webpage.png"
@@ -13,9 +14,9 @@ order: 4
 
 ## Overview
 
-Toronto had an enormous baseball audience and almost no writing that took advanced analytics seriously. Coverage was either mainstream and stats-light, or American and focused elsewhere. BlueJaysPlus.com was built to fill that gap: sabermetric analysis of one team, written for readers who wanted the numbers rather than the narrative.
+Toronto had an enormous baseball audience and almost no writing that took advanced analytics seriously. Coverage was either mainstream and stats-light, or American and focused elsewhere. **Blue Jays Plus** was built to fill that gap: sabermetric analysis of one team, written for readers who wanted the numbers rather than the narrative.
 
-I co-founded it and ran it as Managing Editor from 2013 until its acquisition by Baseball Prospectus.
+I co-founded BlueJaysPlus.com and ran it as Managing Editor from 2013. Baseball Prospectus acquired the site and relaunched it under their masthead as **Baseball Prospectus Toronto**, which is the name it carried from then on.
 
 ## What It Took
 
@@ -28,7 +29,7 @@ I co-founded it and ran it as Managing Editor from 2013 until its acquisition by
 ## Outcome
 
 - Grew to **500k-1M annual page views**, becoming a leading source for advanced Blue Jays analysis.
-- **Acquired by Baseball Prospectus**, the field's most established publication.
+- **Acquired by Baseball Prospectus**, the field's most established publication, and relaunched as Baseball Prospectus Toronto.
 - Published analysis in **ESPN** and the **Baseball Prospectus Annual** (2016-2017).
 
 This is also where the analytics habit that runs through the rest of my work started: finding the measure that actually explains the outcome, and being willing to discard the one everybody quotes.
