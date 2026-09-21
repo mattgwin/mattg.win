@@ -1,5 +1,31 @@
 @import "tailwindcss";
 
+/*
+  Color scheme ported from mattg.win (Once UI: dark theme, "sand" neutral,
+  "moss" brand). devportfolio is written light-first, so rather than editing
+  every component we remap Tailwind's neutral scale onto the sand ramp
+  *inverted*: low numbers become dark surfaces, high numbers become light text.
+  That flips the whole template to dark and keeps the components untouched.
+*/
+@theme {
+  /* sand ramp, inverted for a dark surface */
+  --color-white: #0d0a00; /* page background (sand-100) */
+  --color-black: #fdf9ee; /* brightest text (sand-1200) */
+
+  --color-gray-50: #1b1608; /* raised card (sand-200) */
+  --color-gray-100: #241e0e;
+  --color-gray-200: #443f30; /* borders (sand-300) */
+  --color-gray-300: #5e594c; /* sand-400 */
+  --color-gray-400: #797465; /* sand-500 */
+  --color-gray-500: #999486; /* muted text (sand-600) */
+  --color-gray-600: #b7b2a4; /* body text (sand-700) */
+  --color-gray-700: #d7d2c4; /* sand-800 */
+  --color-gray-800: #e5e0d2; /* headings (sand-900) */
+  --color-gray-900: #f2eddf; /* strongest headings (sand-1000) */
+}
+
 body {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
+  background-color: var(--color-white);
+  color: var(--color-gray-600);
 }
